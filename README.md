@@ -1,34 +1,28 @@
 # ISC Data Structure 2026
-## Learning Materials for Data Structure UTS (2023-2025)
+Learning materials for Data Structure UTS (2023-2025)
 
 ---
 
 ## Overview
 
-Repository ini adalah **koleksi materi pembelajaran komprehensif** untuk mata kuliah **Struktur Data** (ISC Semester 2), yang mencakup:
-
-- **Analisis mendalam** soal-soal UTS dari tahun 2023, 2024, dan 2025
-- **Panduan pembelajaran** step-by-step dengan visualisasi ASCII
-- **Solusi terstruktur** untuk semua topik utama
-- **Penjelasan konseptual** tentang alasan di balik setiap implementasi
-
-Materi ini dirancang untuk membantu mahasiswa **memahami**, bukan hanya sekedar **menghafal** implementasi data structure.
+Repository ini berisi **panduan pembelajaran komprehensif** untuk mata kuliah Struktur Data (ISC Semester 2):
+- Analisis soal UTS 2023, 2024, 2025
+- Penjelasan step-by-step dengan visualisasi ASCII
+- Alur berpikir sistematis untuk setiap topik
+- Fokus pada **pemahaman**, bukan hafalan
 
 ---
 
-## Struktur Materi
+## Struktur Direktori
 
 ```
 ISC-Data-Structure-2026/
-│
-├── README.md                          (file ini)
-│
-├── Soal UTS 2023 - 2025/             (arsip soal ujian)
-│   ├── 2023 UTS Strukdat.pdf         (exam paper 2023)
-│   ├── 2024 UTS Strukdat.pdf         (exam paper 2024)
-│   └── STRUKTUR DATA 2025 PAKET ABC.pdf  (exam paper 2025 - 3 variasi)
-│
-└── Penjelasan Soal/                     (LEARNING GUIDES - START HERE!)
+├── README.md
+├── Soal UTS 2023 - 2025/          (exam papers)
+│   ├── 2023 UTS Strukdat.pdf
+│   ├── 2024 UTS Strukdat.pdf
+│   └── STRUKTUR DATA 2025 PAKET ABC.pdf
+└── Penjelasan Soal/                  (LEARNING GUIDES - START HERE!)
     ├── UTS STRUKTUR DATA 2023 - Fix.md
     ├── UTS STRUKTUR DATA 2024 - Fix.md
     └── UTS STRUKTUR DATA 2025 - Fix.md
@@ -36,378 +30,222 @@ ISC-Data-Structure-2026/
 
 ---
 
-## Panduan Penggunaan
+## Panduan Cepat
 
-### Untuk Belajar Mandiri
-
-1. **Mulai dari file yang paling baru**: `Penjelasan Soal/UTS STRUKTUR DATA 2025 - Fix.md`
-   - Materi paling lengkap dan terkini
-   - Sistem multi-paket membantu memahami variasi soal
-   - Penjelasan fundamental yang solid
-
-2. **Bandingkan dengan tahun sebelumnya** untuk melihat evolusi topik:
-   - 2023: Problem solving approach
-   - 2024: Step-by-step modular coding
-   - 2025: Comprehensive system dengan variasi paket
-
-3. **Praktik dengan soal asli** dari folder `Soal UTS 2023 - 2025/`
+| Tipe Pengguna | Mulai Dari | Tujuan |
+|---|---|---|
+| **Pemula** | 2025 - Fix.md | Dasar SLL vs DLL |
+| **Intermediate** | 2024 - Fix.md | Implementasi modular |
+| **Advanced** | 2023 - Fix.md | Problem solving |
+| **Latihan** | Folder Soal UTS | Practice dengan soal asli |
 
 ---
 
-## 📝 Topik Utama
+## Topik Utama
 
-### 1️⃣ **Double Linked List (DLL)**
-- Struktur data dengan dua pointer (`prev` dan `next`)
-- Operasi: `insertFirst`, `insertLast`, `insertAfter`
-- **Tipe Soal**: Mulai dari analysis (2023) → implementation (2024) → optimization (2025)
+### Double Linked List (DLL)
+- 2 pointer: `prev` dan `next`
+- Operasi: insertFirst, insertLast, insertAfter
+- Fleksibel, bisa traversal 2 arah
 
-### 2️⃣ **Single Linked List (SLL)** 
-- Struktur data dengan satu pointer (`next`)
-- Lebih sederhana dari DLL tapi kurang fleksibel
-- **Baru di 2025**: Perbandingan sistematis dengan DLL melalui sistem paket
+### Single Linked List (SLL)
+- 1 pointer: `next` saja
+- Operasi: insertFirst, insertLast, insertAfter
+- Lebih sederhana, hemat memori
 
-### 3️⃣ **Stack**
-- Prinsip LIFO (Last In, First Out)
-- Operasi: `push`, `pop`, `peek`
-- **Tipe Soal**: Teori (2023) → Implementation (2024) → Comparison (2025+)
+### Stack (2023-2024 only)
+- Prinsip LIFO (Last In First Out)
+- Operasi: push, pop, peek
+- **Catatan**: Tidak ada di UTS 2025
 
 ---
 
-## 🔍 Evolusi UTS 2023 → 2025
+## Evolusi UTS: 2023 → 2025
 
 | Aspek | 2023 | 2024 | 2025 |
-|-------|------|------|------|
-| **Pendekatan** | Problem Solving | Step-by-step Modular | Multi-Packet System |
-| **Soal 1** | DLL (Analysis) | DLL (7 sub-poin) | DLL + SLL + Comparison |
-| **Soal 2** | Stack (Theory only) | Stack (Implementation) | Linked List vs Stack |
-| **Topik Utama** | DLL + Stack | DLL + Stack | **SLL vs DLL (100% focus)** |
-| **Materi Stack** | ✅ Included | ✅ Included | ❌ Dihilangkan |
-| **Tingkat Kesulitan** | Menengah | Medium-High | High (lebih detail) |
-| **Soal Variasi** | 1 versi | 1 versi | **3 versi** (A, B, C) |
+|---|---|---|---|
+| **Pendekatan** | Problem Solving | Step-by-step Modular | Multi-Packet |
+| **Focus** | DLL + Stack | DLL + Stack | **SLL vs DLL** |
+| **Soal Variasi** | 1 versi | 1 versi | **3 versi** (A,B,C) |
+| **Tingkat** | Medium | Medium-High | High |
 
-### 📌 Poin Penting 2025
-
-Di tahun 2025, **Stack tidak diuji sama sekali**. Sebaliknya, fokus dosen adalah:
-- **Pemahaman mendalam** tentang perbedaan SLL vs DLL
-- **Implementasi multi-paket** untuk menguji kesadaran mahasiswa tentang trade-off perilaku
-- **Pendalaman pointer memory** yang lebih detail
+**⚠️ 2025 Update**: Stack dihilangkan sepenuhnya. Fokus penuh pada SLL vs DLL dengan sistem 3 paket.
 
 ---
 
-## Konten Penjelasan Soal
+## Konten File Penjelasan Soal
 
-### **UTS STRUKTUR DATA 2023 - Fix.md**
+### **2023 - Problem Solving Approach**
 
-Materi ini mengajarkan **problem solving approach**:
+**Soal 1** - DLL Analysis (80 poin)
+- Input: 5, 10, 8, 7, 3 → Output: 10, 7, 5, 8, 3
+- Tentukan sendiri operasi insert mana yang digunakan
+- Belajar: Analisis alur berpikir sistematis
 
-#### **Soal 1 - Double Linked List (80 poin)**
-- Input: 5, 10, 8, 7, 3
-- Output yang diharapkan: 10, 7, 5, 8, 3
-- **Challenge**: Tentukan sendiri operasi insert mana yang harus digunakan
-- **Belajar**: Alur berpikir sistematis untuk analysis soal yang ambigu
-
-Langkah-langkah analisis:
-1. Tentukan kondisi akhir dari output
-2. Identifikasi posisi setiap elemen
-3. Kenali "karakter" setiap operasi (insertFirst vs insertLast vs insertAfter)
-4. Susun urutan operasi yang logis
-
-#### **Soal 2 - Stack Teori (20 poin)**
-- 2a: Apa itu Stack Overflow? Kapan? Kenapa? Akibatnya?
-- 2b: Definisikan struktur Stack (konseptual + implementasi)
-- **Output**: Stack overflow check + inisialisasi + operasi dasar
+**Soal 2** - Stack Teori (20 poin)
+- Stack Overflow, definisi struktur
 
 ---
 
-### **UTS STRUKTUR DATA 2024 - Fix.md**
+### **2024 - Modular Coding Approach**
 
-Materi ini mengajarkan **modular coding approach** (from zero to hero):
+**Soal 1** - DLL Implementation (80 poin)
+- 7 sub-poin terstruktur:
+  - 1a: struct Node (prev, data, next)
+  - 1b: buatNode()
+  - 1c: insertFirst()
+  - 1d: insertLast()
+  - 1e: insertAfter() - **4 pointer, urutan CRITICAL**
+  - 1f: cetakList()
+  - 1g: main()
 
-#### **Soal 1 - Double Linked List (80 poin)**
-Tujuh sub-poin yang terstruktur:
-- **1a**: Definisikan `struct Node` dengan `prev`, `data`, `next`
-- **1b**: Fungsi `buatNode()` - "pabrik node"
-- **1c**: Fungsi `insertFirst()`
-- **1d**: Fungsi `insertLast()`
-- **1e**: Fungsi `insertAfter()` - **4 pointer** yang harus dikelola dengan urutan tepat
-- **1f**: Fungsi `cetakList()` - output format: `NULL <- [A] <-> [B] <-> [C] -> NULL`
-- **1g**: Fungsi `main()` - orchestration seluruh skenario
+**Skenario**: insertFirst(40) → insertFirst(50) → insertLast(30) → insertAfter(head, 90)
 
-**Skenario soal**:
-```
-insertFirst(40)      → [40]
-insertFirst(50)      → [50] ↔ [40]
-insertLast(30)       → [50] ↔ [40] ↔ [30]
-insertAfter(head, 90)→ [50] ↔ [90] ↔ [40] ↔ [30]
-```
-
-#### **Soal 2 - Stack (30 poin)**
-- **2a**: Perbedaan Stack vs SLL
-  - Stack: akses TERBATAS (hanya TOP, prinsip LIFO)
-  - SLL: akses BEBAS di mana saja
-- **2b**: Struktur Stack dengan array + `top` variable
-- **2c**: Implementasi `push()` dan `pop()` dengan error handling
+**Soal 2** - Stack Implementation (30 poin)
+- 2a: Perbedaan SLL vs Stack
+- 2b: Struktur Stack (array + top)
+- 2c: push() dan pop() dengan error handling
 
 ---
 
-### **UTS STRUKTUR DATA 2025 - Fix.md** ⭐ PALING LENGKAP
+### **2025 - Multi-Packet System**
 
-Materi ini mengajarkan **comprehensive system dengan multi-packet approach**:
-
-#### **Soal 1 - Teori Perbandingan SLL vs DLL (Semua Paket)**
-
-**Tabel Perbandingan**:
+**Soal 1** - SLL vs DLL Comparison (semua paket)
 
 | Aspek | SLL | DLL |
-|-------|-----|-----|
-| **Pointer per node** | 1 (`next`) | 2 (`prev` + `next`) |
-| **Arah traversal** | Satu arah | Dua arah |
-| **Memori per node** | Lebih hemat | Lebih boros |
-| **Delete node** | Perlu pointer ke node sebelumnya | Langsung via `prev` |
-| **Kompleksitas kode** | Lebih sederhana | Lebih kompleks |
-| **Fleksibilitas** | Terbatas | Tinggi |
-| **Kegunaan** | List sederhana, antrian | Browser history, undo/redo |
+|---|---|---|
+| Pointer per node | 1 (`next`) | 2 (`prev` + `next`) |
+| Traversal | Satu arah | Dua arah |
+| Memori | Hemat | Boros |
+| Kompleksitas | Sederhana | Kompleks |
+| Kegunaan | Antrian | Browser history, undo/redo |
 
-**Visualisasi**:
-```
-Single Linked List:
-HEAD → [5] → [10] → [8] → [7] → NULL
-(hanya bisa ke kanan)
+**Soal 2** - 3 Paket Implementasi:
 
-Double Linked List:
-NULL ← [5] ↔ [10] ↔ [8] ↔ [7] → NULL
-(bisa ke kanan dan ke kiri)
-```
+| Paket | Tipe | Fitur Khusus |
+|---|---|---|
+| **A** | DLL | insertFirst + insertLast (3 step each) |
+| **B** | SLL | insertFirst + insertLast (2 step each) |
+| **C** | SLL | insertFirst + insertLast + **insertAfter** |
 
-#### **Soal 2 - Implementasi dengan 3 Paket (A, B, C)**
-
-**Paket A: Double Linked List** (paling kompleks)
-- `struct Node` dengan `prev` + `data` + `next`
-- `insertFirst` + `insertLast` (3 langkah masing-masing)
-- Output: `NULL <- [40] <-> [20] <-> [30] <-> [10] -> NULL`
-
-**Paket B: Single Linked List** (lebih simpel)
-- `struct Node` dengan `data` + `next` (tidak ada `prev`)
-- `insertFirst` + `insertLast` (2 langkah masing-masing)
-- Output: `[40] -> [20] -> [30] -> [10] -> NULL`
-
-**Paket C: Single Linked List + insertAfter** (logika khusus)
-- Struktur sama dengan Paket B
-- Fitur tambahan: `insertAfter()` untuk insert di tengah
-- **KRITIS**: Step 1 harus DULUAN: `baru->next = target->next`
-- Output: `[20] -> [40] -> [30] -> [10] -> NULL`
+**Paket A Output**: `NULL <- [40] <-> [20] <-> [30] <-> [10] -> NULL`
+**Paket B Output**: `[40] -> [20] -> [30] -> [10] -> NULL`
+**Paket C Output**: `[20] -> [40] -> [30] -> [10] -> NULL`
 
 ---
 
-## 💡 Konsep Pedagogis Utama
+## Konsep Kunci
 
-### **Alur Berpikir Sistematis**
-
-Untuk setiap masalah, ikuti langkah ini:
-
+### Alur Berpikir Sistematis
 ```
-1. Pahami Konteks
-   ↓
-2. Visualisasikan Kondisi Awal & Akhir
-   ↓
-3. Identifikasi Apa yang Berubah (pointer/state)
-   ↓
-4. Tentukan Urutan Operasi yang Aman
-   ↓
-5. Implementasikan sesuai urutan
+Pahami Konteks → Visualisasi → Identifikasi Perubahan → 
+Tentukan Urutan → Implementasi
 ```
 
-### **Urutan Pointer Operasi: SANGAT PENTING**
+### GOLDEN RULE: Urutan Pointer
 
-**Prinsip Emas**: Sambungkan node BARU ke LIST yang ada **SEBELUM** mengubah referensi HEAD/TAIL lama.
-
-**Contoh insertAfter (DLL)**:
+**SALAH**: Putuskan pointer lama dulu
+```c
+target->next = baru;  // Referensi ke node setelahnya HILANG!
+baru->next = ???      // Tidak ada data!
 ```
-❌ SALAH - putuskan lama dulu:
-target->next = baru;      // STOP! Anda kehilangan referensi ke node setelahnya
-baru->next = ???           // Node setelahnya sudah hilang!
 
-✅ BENAR - sambungkan baru dulu:
-baru->next = target->next;         // Save referensi ke node setelahnya
-baru->prev = target;               // Sambungkan ke node sebelumnya
-target->next->prev = baru;         // Update prev pointer node setelahnya
-target->next = baru;               // Terakhir, putuskan lama
+**BENAR**: Sambungkan ke node baru dulu
+```c
+baru->next = target->next;         // Simpan referensi
+baru->prev = target;               // Sambung ke sebelah kiri
+target->next->prev = baru;         // Update prev pointer
+target->next = baru;               // Terakhir!
 ```
+
+### Operasi Quick Reference
+
+| Operasi | DLL (langkah) | SLL (langkah) |
+|---|---|---|
+| insertFirst | 3 (next, prev, update head) | 2 (next, update head) |
+| insertLast | 3 (prev, next, update tail) | 2 (next, update tail) |
+| insertAfter | 4 (next, prev, prev of next, next) | 2 (next of new, next of target) |
 
 ---
 
-## 🛠️ Cara Menggunakan Repository
+## Cara Menggunakan
 
-### **Setup Awal**
+### Step 1: Pelajari Materi
 ```bash
-# Clone atau download repository
-git clone <repo-url>
-cd ISC-Data-Structure-2026
-
-# Struktur terotomi dengan rapi
+# Mulai dari yang terbaru untuk pemahaman terdepan
+# Buka: Penjelasan Soal/UTS STRUKTUR DATA 2025 - Fix.md
 ```
 
-### **Belajar Materi**
-1. Buka `Penjelasan Soal` folder
-2. **Jika baru**: Mulai dari `UTS STRUKTUR DATA 2025 - Fix.md`
-3. **Jika sudah tahu**: Bandingkan 3 file untuk melihat evolusi
-4. **Jika ingin latihan**: Buka `Soal UTS 2023 - 2025/` dan kerjakan soal asli
-
-### **Membuat Solusi**
-Untuk setiap soal, ikuti template:
-
+### Step 2: Template Coding
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 
-// 1. Struct Definition (mirrored dari guide)
+// 1. Struct Node
 struct Node {
     int data;
-    struct Node* prev;
+    struct Node* prev;   // hanya untuk DLL
     struct Node* next;
 };
 
-struct Node* head = NULL;
-struct Node* tail = NULL;
+// 2-5. Implementasi fungsi sesuai guide
+// (buatNode, insertFirst, insertLast, insertAfter, cetakList)
 
-// 2. buatNode - factory function
-struct Node* buatNode(int data) {
-    // ... (lihat di guide)
-}
-
-// 3. insertFirst, insertLast, insertAfter
-// ... (implementasi sesuai guide)
-
-// 4. cetakList
-void cetakList() {
-    // ... (implementasi sesuai guide)
-}
-
-// 5. main - orchestration
+// 6. Main - orchestration skenario soal
 int main() {
     // Jalankan skenario sesuai soal
     return 0;
 }
 ```
 
----
-
-## 📊 Mapping Soal ke Materi
-
-### Jika Anda Mendapat Soal Mirip 2023
-→ Buka **UTS STRUKTUR DATA 2023 - Fix.md**
-- Fokus pada: Analisis alur berpikir problem solving
-- Pelajari: Bagaimana menentukan operasi mana yang cocok
-
-### Jika Anda Mendapat Soal Mirip 2024
-→ Buka **UTS STRUKTUR DATA 2024 - Fix.md**
-- Fokus pada: Implementasi step-by-step modular
-- Pelajari: Urutan pointer dan error handling
-
-### Jika Anda Mendapat Soal Mirip 2025
-→ Buka **UTS STRUKTUR DATA 2025 - Fix.md**
-- Fokus pada: Perbandingan SLL vs DLL
-- Pelajari: Perbedaan implementasi 3 paket (A, B, C)
-- **Ingat**: 2025 TIDAK ada Stack — fokus penuh ke Linked List
+### Step 3: Latihan dengan Soal Asli
+Buka folder `Soal UTS 2023 - 2025/`
 
 ---
 
-## 🎓 Learning Objectives
+## Quick Reference Links
 
-Setelah mempelajari materi ini, Anda seharusnya dapat:
-
-✅ **Memahami** struktur dan prinsip DLL dan SLL
-✅ **Mengimplementasikan** operasi insert (first, last, after) dengan benar
-✅ **Menjelaskan** trade-off antara SLL vs DLL
-✅ **Menulis** kode berstruktur dengan modular approach
-✅ **Menganalisis** urutan pointer dan alasan setiap step
-✅ **Mendeteksi** dan menghindari memory leak dan referensi yang hilang
-✅ **Memecahkan** problem soal dengan systematic thinking
+| Materi | File | Fokus |
+|---|---|---|
+| Theory + Problem Solving | Penjelasan Soal/UTS STRUKTUR DATA 2023 - Fix.md | Analisis alur berpikir |
+| Modular Implementation | Penjelasan Soal/UTS STRUKTUR DATA 2024 - Fix.md | Coding step-by-step |
+| Latest + Multi-Packet | Penjelasan Soal/UTS STRUKTUR DATA 2025 - Fix.md | SLL vs DLL comprehensive |
+| Practice Soal | Soal UTS 2023 - 2025/\*.pdf | Real exam problems |
 
 ---
 
-## 🐛 Troubleshooting Common Mistakes
+## Learning Checklist
 
-### ❌ Pointer Hilang di insertAfter
-```c
-// SALAH
-target->next = baru;  // Referensi ke node setelahnya HILANG!
-
-// BENAR
-baru->next = target->next;  // Save dulu
-target->next = baru;        // Ubah setelah
-```
-
-### ❌ Tidak Update HEAD/TAIL setelah insertFirst/Last
-```c
-// SALAH
-baru->next = head;
-
-// BENAR — harus ada step update head juga
-baru->next = head;
-head->prev = baru;
-head = baru;  // ← JANGAN LUPA ini!
-```
-
-### ❌ Output Format Salah
-```c
-// SALAH — DLL tapi format SLL
-printf("[%d] -> ", curr->data);
-
-// BENAR
-printf("[%d] <-> ", curr->data);  // Kedua arah pointer
-```
+- [ ] Pahami perbedaan SLL vs DLL dari tabel perbandingan
+- [ ] Visualisasikan pointer movements dalam insertAfter (DLL)
+- [ ] Tahu kenapa step 1 insertAfter harus `baru->next = target->next` duluan
+- [ ] Bisa identifikasi overhead pointer vs memory efficiency trade-off
+- [ ] Implementasi DLL module: struct → buatNode → insert → print
+- [ ] Implementasi SLL module dengan insertAfter logic
+- [ ] Bandingkan 3-step (DLL) vs 2-step (SLL) di setiap operasi
+- [ ] Praktik minimal 1 soal dari setiap tahun
 
 ---
 
-## 📞 Referensi Cepat
+## Common Mistakes
 
-### Operasi DLL vs SLL
-
-**insertFirst**:
-- DLL: 3 langkah (next, prev, update head)
-- SLL: 2 langkah (next, update head)
-
-**insertLast**:
-- DLL: 3 langkah (prev, next, update tail)
-- SLL: 2 langkah (next, update tail)
-
-**insertAfter**:
-- DLL: 4 pointer, urutan CRITICAL
-- SLL: 2 pointer, step 1: `baru->next = target->next` **HARUS DULUAN**
+| Masalah | Penyebab | Solusi |
+|---|---|---|
+| Pointer hilang di insertAfter | Ubah `target->next` sebelum save | Step 1: `baru->next = target->next` dulu |
+| HEAD/TAIL tidak terupdate | Lupa assignment akhir | Update head/tail SETELAH sambung pointer |
+| Output format salah | DLL pakai `->` bukan `<->` | Gunakan `<->` untuk menunjukkan 2 arah |
+| Memory leak | malloc tanpa free | Selalu balance malloc dengan free di akhir |
 
 ---
 
-## 🔗 File Links Quick Access
+## Key Takeaways
 
-| Topik | File | Purpose |
-|-------|------|---------|
-| 2023 DLL + Stack Theory | Penjelasan Soal/UTS STRUKTUR DATA 2023 - Fix.md | Problem Solving Approach |
-| 2024 DLL + Stack Code | Penjelasan Soal/UTS STRUKTUR DATA 2024 - Fix.md | Modular Implementation |
-| 2025 SLL vs DLL | Penjelasan Soal/UTS STRUKTUR DATA 2025 - Fix.md | Comprehensive System |
-| Soal 2023 Original | Soal UTS 2023 - 2025/2023 UTS Strukdat.pdf | Original Exam |
-| Soal 2024 Original | Soal UTS 2023 - 2025/2024 UTS Strukdat.pdf | Original Exam |
-| Soal 2025 Original | Soal UTS 2023 - 2025/STRUKTUR DATA 2025 PAKET ABC.pdf | Original Exam (3 variants) |
+1. **Pointer order matters** - urutan sambung pointer CRITICAL
+2. **SLL lebih simpel dari DLL** - 1 pointer vs 2 pointer
+3. **Multi-packet 2025** - pahami trade-off per paket
+4. **Consistent step-by-step** - struktur modular membuat debug mudah
+5. **Visualisasi sebelum code** - gambar pointer lebih jelas dari code
 
 ---
 
-## 📌 Catatan Akhir
-
-- **Materi ini adalah pembelajaran**, bukan copy-paste solution
-- **Pahami alur berpikir** di setiap step, tidak hanya kode
-- **Praktik berkali-kali** hingga mahir
-- **Jangan hafal**, tapi **mengerti** mengapa setiap langkah perlu
-- **Urutan pointer sangat penting** — satu kesalahan bisa membuat program crash
-
----
-
-## 📄 Version History
-
-| Versi | Tanggal | Konten |
-|-------|---------|--------|
-| V2.0 | 2025 | Multi-packet system (A, B, C), comprehensive guides |
-| V1.0 | 2024 | Basic DLL + Stack materials |
-
----
-
-**Created for ISC Students | Struktur Data Semester 2 | 2023-2025**
+**For ISC Students | Struktur Data Semester 2 | Learn, Practice, Master**
